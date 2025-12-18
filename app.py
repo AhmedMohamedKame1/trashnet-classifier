@@ -1,4 +1,13 @@
 import streamlit as st
+
+# Page configuration
+st.set_page_config(
+    page_title="TrashNet Classifier",
+    page_icon="bin",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 import numpy as np
 import joblib
 import keras
@@ -10,13 +19,14 @@ import av
 import threading
 from streamlit_webrtc import webrtc_streamer, WebRtcMode, RTCConfiguration
 
-# Page configuration
-st.set_page_config(
-    page_title="TrashNet Classifier",
-    page_icon="bin",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+@st.cache_resource
+def get_tf_keras():
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TF warnings
+    import tensorflow as tf
+    import keras
+    return tf, keras
+
+tf, keras = get_tf_keras()
 
 # Custom CSS
 st.markdown("""
