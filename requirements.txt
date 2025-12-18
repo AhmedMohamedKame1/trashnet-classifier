@@ -1,9 +1,8 @@
+tensorflow-cpu==2.15.0
+keras==2.15.0
+numpy<2.0
 streamlit
-numpy
-joblib
-scikit-learn
-tensorflow-cpu
-pillow
-opencv-python-headless
 streamlit-webrtc
-av
+opencv-python-headless
+pillow
+scikit-learn
