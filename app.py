@@ -75,7 +75,9 @@ RTC_CONFIGURATION = RTCConfiguration(
 def load_models():
     """Load all models from the correct path"""
     try:
-        models_dir = r'D:\AI\ML_University_project\application\saved_models\trashnet_models'
+        # Works both locally and on Streamlit Cloud
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        models_dir = os.path.join(current_dir, 'saved_models', 'trashnet_models')
         
         if not os.path.exists(models_dir):
             return None
