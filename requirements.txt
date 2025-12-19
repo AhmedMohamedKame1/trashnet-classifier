@@ -1,8 +1,0 @@
-tensorflow==2.17.0
-tf-keras==2.17.0
-streamlit
-streamlit-webrtc
-opencv-python-headless
-pillow
-scikit-learn
-joblib
