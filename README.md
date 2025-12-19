@@ -69,7 +69,7 @@ trashnet-classifier/
     └── trashnet_models/           # Trained model files
 ```
 
-## 🎮 Usage
+## Usage
 
 1. **Start the application**
    ```bash
