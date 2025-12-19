@@ -10,8 +10,8 @@ st.set_page_config(
 
 import numpy as np
 import joblib
-import tf_keras as keras
 import tensorflow as tf
+from tensorflow import keras  # Changed: import keras from tensorflow
 from PIL import Image
 import os
 import cv2
