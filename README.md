@@ -100,5 +100,3 @@ The classifier aims to provide:
 - Fast inference time for real-time classification
 - Robust performance on various image qualities
 - Reliable predictions for practical applications
-
-⭐ If you find this project useful, please consider giving it a star on GitHub
